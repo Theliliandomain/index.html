@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lilian Domain</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: silver;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #1a1a1a;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    .slogan {
+      font-style: italic;
+      color: #c0c0c0;
+      margin-top: 5px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    #about p {
+      margin: 10px 0;
+    }
+
+    #portfolio {
+      text-align: center;
+    }
+
+    .card {
+      display: inline-block;
+      width: 200px;
+      margin: 10px;
+      background-color: #333;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .card p {
+      margin: 10px 0 0;
+      font-size: 0.9em;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    form label {
+      margin: 10px 0 5px;
+    }
+
+    form input, form textarea, form button {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    form input, form textarea {
+      background-color: #1a1a1a;
+      color: silver;
+    }
+
+    form button {
+      background-color: silver;
+      color: black;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #c0c0c0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #1a1a1a;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    #themes {
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .theme-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .theme {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .theme img {
+      width: 100%;
+      height: auto;
+    }
+
+    .theme:hover {
+      transform: scale(1.05);
+    }
+
+    .theme h3 {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Lilian Domain</h1>
+    <p class="slogan">Enamoured by the exquisite.</p>
+  </header>
+  
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Welcome to The Lilian Domain, where elegance meets creativity.</p>
+      <p>We create bespoke webpage themed cards and invitations.</p>
+      <p>Contact us at: <a href="mailto:info@theliliandomain.com" style="color: silver; text-decoration: underline;">info@theliliandomain.com</a></p>
+    </section>
+
+    <section id="portfolio">
+      <h2>Our Portfolio</h2>
+      <div class="card">
+        <img src="Sample1.png" alt="Sample Design 1">
+        <p>Sample Birthday Card</p>
+      </div>
+    
+      <div class="card" id="hiddenDiv" style="display:none">
+        <img src="sample2.jpg" alt="Sample Design 2">
+        <p>Sample Business Event Invite</p>
+      </div>
+    </section>
+
+    
+  
+    <section id="themes">
+      <!--Add h2 Our Themes-->
+      <h2> </h2>
+      
+        <!--Remove hidden div and style=display:none-->
+      <div class="theme-gallery"id="hiddenDiv" style="display:none">
+        <!-- Theme 1 -->
+        <div class="theme"></div>
+          <h3>Christmas Theme 1</h3>
+          <a href="Themes/Christmas Theme 1/" target="_blank">
+            <img src="Themes/Christmas Theme 1/Preview.png" alt="Christmas Theme 1 Preview">
+          </a>
+        </div>
+        <!-- Theme 2 -->
+         <!--Remove hidden div and style=display:none-->
+        <div class="theme" id="hiddenDiv" style="display:none">
+          <h3>Christmas Theme 2</h3>
+          <a href="Themes/Christmas Theme 2/" target="_blank">
+            <img src="Themes/Christmas Theme 2/Preview.png" alt="Christmas Theme 2 Preview">
+          </a>
+        </div>
+        <!-- Add more themes here -->
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form action="mailto:info@theliliandomain.com" method="POST" enctype="text/plain">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 The Lilian Domain. All rights reserved.</p>
+  </footer>
+</body>
+</html>
